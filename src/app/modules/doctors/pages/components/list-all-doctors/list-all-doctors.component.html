@@ -1,10 +1,7 @@
-<p>
-  list-all-doctors works!
-</p>
 
 <div class="row">
-    <div class="col-md-6"  *ngFor="let doctor of doctors">
-      <div class="card" style="width: 18rem;" >
+    <div class="col-md-6" *ngFor="let doctor of doctors">
+      <div class="card" style="width: 18rem;">
         <img class="card-img-top" [src]="doctor.profilePicFile" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{doctor.nameEn}}</h5>
@@ -13,8 +10,9 @@
         </div>
       </div>
     </div>
-
-
 </div>
+<button class="btn btn-success mx-2" (click)="next()">next</button>
+<button class="btn btn-primary" (click)="previous()">previous</button>
+
 
 

@@ -7,7 +7,8 @@ import { DoctorsService } from '../../servcies/doctors.service';
   styleUrls: ['./list-all-doctors.component.css'],
 })
 export class ListAllDoctorsComponent implements OnInit {
-  doctors = [];
+  doctors: any = [];
+
   pageNumber: number = 1;
   constructor(private service: DoctorsService) {}
 
